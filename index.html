@@ -18,6 +18,7 @@
 
   <body>
     <form class="search-form">
+      <h1>Get your cocktail</h1>
       <input
         type="text"
         placeholder="Enter your favorite cocktail"
@@ -27,11 +28,30 @@
     <!-- We'll render our cocktails in this section via JavaScript | Since there is no React used and state changes have no impact here | We'll do it iteratively to just create a kind of HTML template to be ultimately used in the JavaScript after we fetch the API data for the cocktails successfully -->
 
     <section class="section cocktails">
-      <article class="loading">
+      <!--1. Loading  -->
+      <article class="loading hide-loading">
         <img
           src="./loading.gif"
           alt="loading" />
       </article>
+
+      <!-- 2. Here the result of our successful API goes -->
+      <main class="section-center">
+        <!-- Single Drink -->
+        <a href="drink.html">
+          <article
+            class="cocktail"
+            data-id="1">
+            <img
+              src="./cocktail.jpg"
+              alt="cocktail drink" />
+            <h3>Martini</h3>
+          </article>
+        </a>
+      </main>
+
+      <!-- 3. For Error -->
+      <h2 class="title"></h2>
     </section>
 
     <script
