@@ -28,6 +28,7 @@ const displayDrinks = ({ drinks }) => {
         </a>`
     })
     .join('')
+  title.textContent = ''
   section.innerHTML = templatedDrinks
   return section
 }
