@@ -4,7 +4,7 @@ const fetchDrinks = async url => {
     const response = await fetch(url)
     const data = response.json()
     console.log(data)
-    return data
+    return data // fetchDrinks either returns data or returns null from the API
   } catch (error) {
     console.log(error)
   }
