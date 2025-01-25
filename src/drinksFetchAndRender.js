@@ -1,6 +1,7 @@
 // To fetch drinks & display drinks
 import fetchDrinks from './fetchDrinks.js'
 import displayDrinks from './displayDrinks.js'
+
 async function fetchAndRender(url) {
   // 1. Fetch Drinks: We make another function call to fetch drinks
   const data = await fetchDrinks(url)
