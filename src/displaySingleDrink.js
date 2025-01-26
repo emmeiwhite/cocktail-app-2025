@@ -1,10 +1,13 @@
-const drinkData = data.drinks[0]
-console.log(drinkData)
+import get from './getElement.js'
 
-const drinkSection = get('.single-drink')
-const { strDrinkThumb: drinkImage, strDrink: drinkName } = drinkData
+export default function displaySinceDrink(drink) {
+  const drinkData = drink.drinks[0]
+  console.log(drinkData)
 
-const UIwithData = `
+  const drinkSection = get('.single-drink')
+  const { strDrinkThumb: drinkImage, strDrink: drinkName } = drinkData
+
+  const UIwithData = `
       <img
         src="${drinkImage}"
         alt="cocktail drink"
@@ -20,4 +23,5 @@ const UIwithData = `
         </a>
       </article>`
 
-drinkSection.innerHTML = UIwithData
+  drinkSection.innerHTML = UIwithData
+}
