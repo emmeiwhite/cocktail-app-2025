@@ -1,6 +1,8 @@
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007'
 
 import get from './src/getElement.js'
+const drinkId = localStorage.getItem('drink-id')
+console.log(drinkId)
 
 /*
 const grantParent = get('.grand-parent')
