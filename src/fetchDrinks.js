@@ -10,7 +10,7 @@ const fetchDrinks = async url => {
     } else {
       throw new Error('Error fetching data')
     }
-    console.log(data)
+    // console.log(data)
     return data // fetchDrinks either returns data or returns null from the API
   } catch (error) {
     hideLoading()

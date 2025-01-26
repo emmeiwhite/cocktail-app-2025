@@ -1,8 +1,17 @@
-const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007'
+import fetchDrinks from './src/fetchDrinks.js'
+import displaySingleDrink from 'src/displaySingleDrink.js'
 
-import get from './src/getElement.js'
-const drinkId = localStorage.getItem('drink-id')
-console.log(drinkId)
+const url = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
+
+const presentDrink = async () => {
+  const drinkId = localStorage.getItem('drink-id')
+
+  console.log(drinkId)
+  const drink = await fetchDrinks(`${url}${drinkId}`)
+  displaySingleDrink(drink)
+}
+
+window.addEventListener('DOMContentLoaded', presentDrink)
 
 /*
 const grantParent = get('.grand-parent')
