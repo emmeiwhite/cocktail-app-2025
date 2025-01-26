@@ -39,7 +39,7 @@ export default function displaySinceDrink(data) {
         <a
           href="index.html"
           class="btn">
-          all cocktails
+          all drinks
         </a>
       </article>`
 
