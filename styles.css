@@ -247,7 +247,7 @@ input::placeholder {
   object-fit: cover;
 }
 .cocktail:hover img {
-  filter: blur(2px) grayscale(50%);
+  filter: brightness(1.2);
 }
 .cocktail h3 {
   position: absolute;
