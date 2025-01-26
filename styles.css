@@ -298,3 +298,14 @@ input::placeholder {
   display: inline-block;
   margin-top: 2rem;
 }
+
+/* Event Propagation:
+   - By default event capturing happens first but JavaScript doesn't handle the events in the capturing phase by default unless you specifically set the {capture:true} while setting an event handler on an element
+*/
+
+.grand-parent,
+.parent,
+.child {
+  border: 1px solid #777;
+  padding: 1rem;
+}
